@@ -7,6 +7,8 @@ This repository contains a simple React Todo application built using useReducer 
 1. Add new todos
 2. Mark todos as completed
 3. Delete todos
+4. Edit existing todos
+5. Clear all completed todos at once
 
 ## Installation
 1. Clone the repository to your local machine:
