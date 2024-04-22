@@ -1,0 +1,27 @@
+@use "/src/styles/partials/typography" as *;
+
+body {
+  font-style: normal;
+  font-family: "Inclusive Sans", sans-serif;
+  margin: 0;
+  background: linear-gradient(90deg, #f6b092, #85c7b4, #f4d6db);
+}
+
+.todo__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  flex-direction: column;
+  background-color: #ff7e6a;
+  color: white;
+  margin: 4rem auto;
+  padding: 2rem 3rem 3rem;
+  border-radius: 1rem;
+}
+
+footer {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}

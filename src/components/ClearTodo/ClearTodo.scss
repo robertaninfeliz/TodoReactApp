@@ -1,0 +1,6 @@
+@use "../../styles/partials/customs.scss" as *;
+
+.clearTodo {
+    @include buttonStyle;
+    padding: .5rem .5rem;
+}

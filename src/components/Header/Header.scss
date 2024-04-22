@@ -1,0 +1,13 @@
+@use "../../styles/partials/customs.scss" as *;
+@use "../../styles/partials/typography" as *;
+
+.header {
+    text-align: center;
+    &__title {
+        margin: 0;
+    }
+
+    &__subtitle {
+        margin: 0.3rem 0;
+    }
+}

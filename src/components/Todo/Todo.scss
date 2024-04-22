@@ -1,0 +1,50 @@
+@use "../../styles/partials/customs.scss" as *;
+@use "../../styles/partials/typography" as *;
+
+.todo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 3rem;
+    font-family: "Inclusive Sans", sans-serif;
+
+    &__done {
+        text-decoration: line-through;
+    }
+
+    &__buttons {
+        display: flex;
+    }
+
+    &__button-edit {
+        margin-left: 20rem;
+        @include buttonStyle2;
+    }
+
+    &__button-delete {
+        margin-left: .625rem;
+        @include buttonStyle2;
+    }
+
+    &__form-submit {
+        border-radius: 1rem;
+        padding: .5rem 1rem;
+        background: #85c7b4;
+        margin-left: 2rem;
+    }
+
+    &__edit-input {
+        padding: 0.625rem;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 1rem;
+        outline: none;
+        font-family: "Inclusive Sans", sans-serif;
+        
+        &:hover {
+            border: 3px solid hotpink;
+            box-shadow: 0 0 0.3125rem #ffe7e0;
+        }
+    }
+}
