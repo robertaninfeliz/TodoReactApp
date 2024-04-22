@@ -1,7 +1,7 @@
 # Todo React App
 
 ## Introduction
-This repository contains a simple React Todo application built using useReducer instead of useState. This alternative state management approach offers a more structured way to manage state transitions in React applications, especially when dealing with complex state logic. This project uses SaSS.
+This repository contains a simple React Todo application built using useReducer instead of useState. This alternative state management approach offers a more structured way to manage state transitions in React applications, especially when dealing with complex state logic. This project uses SaSS for styling.
 
 ## Features
 1. Add new todos
