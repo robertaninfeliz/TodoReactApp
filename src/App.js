@@ -5,7 +5,6 @@ import Todo from './components/Todo/Todo';
 import AddTodo from "./components/AddTodo/AddTodo";
 import Header from "./components/Header/Header";
 import ClearTodo from "./components/ClearTodo/ClearTodo";
-// import FilterDropdown from "./components/FilterDropdown/FilterDropdown";
 
 function todoReducer(taskState, action) {
   switch (action.type) {
@@ -84,35 +83,11 @@ function App() {
     })
   }
 
-// TODO: Add filter functionality
-  // const onHandleFilterChange = (selectedFilter) => {
-  //   console.log('selected filter', selectedFilter)
-  //   switch (selectedFilter) {
-  //     case 'completed': {
-  //       dispatch({
-  //         type: 'show completed todos'
-  //       })
-  //     }
-  //     case 'active': {
-  //       dispatch({
-  //         type: 'show active todos'
-  //       })
-  //     }
-  //     case 'all': {
-  //       dispatch({
-  //         type: 'show all todos'
-  //       })
-  //     }
-  //   }
-
-  // }
-
   const todoList = taskState.map((todo) => <Todo key={todo.id} update={update} remove={remove}todo={todo} toggleTodo={toggleTodo} />)
 
   return (
     <div className="todo__container">
      <Header />
-     {/* <FilterDropdown handleFilterChange={onHandleFilterChange} /> */}
       <div className="todo__content">
         {todoList}
       </div>
